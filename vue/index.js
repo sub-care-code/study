@@ -4,10 +4,3 @@ var app = new Vue({
     message: "ラッキー",
   },
 });
-
-var app2 = new Vue({
-  el: "#app2",
-  date: {
-    message: "これはapp2になります",
-  },
-});

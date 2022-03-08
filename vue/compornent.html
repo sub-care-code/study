@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js：コンポーネントで再利用可能なパーツの作成</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>コンポーネンツパーツの作り方</h1>
+    <div id="app03">
+      <alert-box>入力されていません</alert-box>
+    </div>
+    <!-- /#app02 -->
+    <p>scriptの中に記載する</p>
+    <p>Vue.component('オリジナルタグ名',{template:`divなどの要素',})</p>
+    <p>componentの中にmethodsも入れることができる</p>
+    <p>あとはlet 変数名 = new Vue({})で記載していく</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

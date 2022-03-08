@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js：アニメーションの作り方</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>アニメーションの作り方</h1>
+    <div id="app02">
+      <button v-on:click="shuffle">シャッフル</button>
+      <transition-group name="flip-list" tag="ul">
+        <li v-for="pref in prefs" v-bind:key="pref.name">{{pref.name}}</li>
+      </transition-group>
+    </div>
+    <!-- /#app02 -->
+    <p>v-on:clikcでクリックした時に動く v-on:click="functionの名前"</p>
+    <p>methodsで定義する</p>
+    <p>transitonのタグで囲む ulタグにしたいときにはtag="ul"とする</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+/* 共通のレイアウト */
+/* フォントの設定 */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+}
+.App {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px 0;
+}
+
+// 印刷のレイアウト
+@page {
+  size: A4;
+} /* A4縦 */

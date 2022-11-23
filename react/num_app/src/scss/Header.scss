@@ -1,0 +1,49 @@
+/* header レイアウト*/
+.header {
+  display: grid;
+  place-items: center;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.site__index {
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 10px;
+}
+
+.description__text {
+  margin-bottom: 5px;
+}
+.description {
+  flex-basis: 75%;
+  font-size: 18px;
+  padding: 20px 0 10px 0px;
+}
+
+/* header写真のレイアウト */
+
+.header-img__wrap {
+  flex-basis: 25%;
+}
+
+.header-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 62.5%;
+  aspect-ratio: 300 / 210;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

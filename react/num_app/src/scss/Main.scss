@@ -1,0 +1,113 @@
+/* 中の数字レイアウト */
+
+.table {
+  margin: 0 auto;
+  border: 2px solid #4e4e4e;
+  width: 100%;
+  height: auto;
+}
+
+.table td {
+  margin: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  &:hover {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  // tdのレイアウト調整
+  &:nth-child(3),
+  &:nth-child(5),
+  &:nth-child(11),
+  &:nth-child(24),
+  &:nth-child(36),
+  &:nth-child(60),
+  &:nth-child(91) {
+    transform: rotate(15deg) translateY(10px);
+  }
+  &:nth-child(9),
+  &:nth-child(14),
+  &:nth-child(26),
+  &:nth-child(39),
+  &:nth-child(71),
+  &:nth-child(88),
+  &:nth-child(96) {
+    transform: rotate(-15deg) translateY(15px);
+    font-size: 26px;
+  }
+  &:nth-child(22),
+  &:nth-child(55),
+  &:nth-child(69) {
+    transform: rotate(110deg) translate(-5px, 10px);
+  }
+  &:nth-child(4n) {
+    transform: translate(10px, 12px);
+    font-size: 20px;
+  }
+  &:nth-child(6n) {
+    transform: translate(10% -20px);
+  }
+
+  /* 答え 消しておく */
+  &:nth-child(2),
+  &:nth-child(7),
+  &:nth-child(21),
+  &:nth-child(34),
+  &:nth-child(40),
+  &:nth-child(59),
+  &:nth-child(65),
+  &:nth-child(79),
+  &:nth-child(89),
+  &:nth-child(92) {
+    /* opacity: 0; */
+    color: red;
+  }
+}
+
+.table__inner {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 5px;
+}
+
+.question .table td {
+  &:nth-child(2),
+  &:nth-child(7),
+  &:nth-child(21),
+  &:nth-child(34),
+  &:nth-child(40),
+  &:nth-child(59),
+  &:nth-child(65),
+  &:nth-child(79),
+  &:nth-child(89),
+  &:nth-child(92) {
+    opacity: 0;
+  }
+}
+
+/* 答えのレイアウト */
+
+.anser__list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 4px;
+}
+
+.anser__item {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #4e4e4e;
+  &-question {
+    color: transparent;
+  }
+}
+
+.anser__index {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 10px auto;
+}

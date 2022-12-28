@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="content">
+        <h1>01</h1>
+        <h2>Glass Card</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          vitae nulla explicabo incidunt accusantium porro quasi fugit quae
+          facere voluptates minima esse natus doloremque cum suscipit
+          consequuntur, quas, ex ipsam.
+        </p>
+        <a href="#">More Detail</a>
+      </div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('.card'), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        'max-glare': 1,
+      });
+    </script>
+  </body>
+</html>
